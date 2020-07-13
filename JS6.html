@@ -1,0 +1,36 @@
+<!doctype>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>6 JS</title>
+	</head>
+	<body>
+		<script>
+			//var d = new Date(86400000);
+			var d = new Date();
+			console.log('getDate ' + d.getDate());
+			console.log('getDay ' + d.getDay());
+			console.log('getFullYear ' + d.getFullYear());
+			console.log('getHours ' + d.getHours());
+			console.log('getMiliseconds ' + d.getMilliseconds());
+			console.log('getMinutes ' + d.getMinutes());
+			console.log('getMonth ' + d.getMonth());
+			console.log('getSeconds ' + d.getSeconds());
+			console.log('getTime ' + d.getTime());
+			//console.log(d.toUTCString());
+			//console.log(d.toDateString());
+			d.setDate(17);
+			console.log(d);
+			function formataData(data = new Date()){
+				var dia = data.getDate();
+				var mes = data.getMonth()+1;
+				var ano = data.getFullYear();
+				if(dia.toString().lenght == 1) dia = '0'+dia;
+				if(mes.toString().lenght == 1) mes = '0'+mes;
+				return dia +'/'+mes+'/'+ano;
+			}
+			console.log(formataData());
+			
+		</script>
+	</body>
+</html>

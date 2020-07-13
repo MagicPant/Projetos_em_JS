@@ -1,0 +1,16 @@
+<!doctype>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Aula 10 - js</title>
+	</head>
+	<body>
+		<div id='msg'></div>
+			<input type="button" value= "Avançar" onclick="window.history.forward();"/>
+			<input type="button" value ="Voltar" onclick="window.history.back();"/>
+		<script>
+			window.localStorage.setItem('nome','MP');
+			document.getElementById('msg').innerHTML =window.localStorage.getItem ('nome');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>9 JS</title>
+	</head>
+	<body>
+		<h1 id="demo" onmouseover="funcao1(this)" onmouseout="funcao2(this)">Passe o mouse aqui</h1>
+		<script>			
+			//document.getElementById('demo').innerHTML ='texto do meu paragrafo';
+			//console.log(document.getElementsByTagName('exemplo'));
+			//var x = document.getElementsByClassName('exemplo');
+			//var x = document.querySelectorAll('p.exemplo');
+			/*
+			document.baseURI /document.body /document.doctype /document.documentURI /document.domain /document.head
+			document.inputEncoding /document.lastModified /document.title /document.URL
+			document.forms /document.links /document.images /document.scripts */
+			//document.write('teste');
+			//document.getElementById('imagem').alt ='texto 2';
+			//document.getElementById('demo').style.color ='red';
+			function funcao1(element){
+				element.innerHTML = "ok mouse sobre o elemento"
+			}
+			function funcao2(element){
+				element.innerHTML = "passe o mouse aqui"
+			}
+			//document.getElementById('demo').onclick = funcao;
+			/*onclick /onload /onchange /onmouseover /onmouseout
+			onfocus /onmousedown /onmouseup */
+		</script>
+	</body>
+</html>

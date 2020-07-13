@@ -1,0 +1,37 @@
+<!doctype>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	</head>
+	<body>
+		<div id='msg'>
+			
+		</div>
+		<input type="button" value ="cancelar" onclick="clearTimeout(msg)"/>
+		<input type="button" value= "cancelar2" onclick=""/>
+		<script>
+			//var janela = window.open('','','width-500,height-400');
+			//janela.document.write('isso é um texto para esse pop-up');
+			//janela.opener.document.write('isso é um texto principal')
+			//var msg = setTimeout(msgtimeout, 5000);
+			//var msg = setInterval(msginterval, 1000);
+			//setInterval(verificaFoco,200);
+			var intervalo =setInterval(verificaFoco,1000);
+			var contador = 0;
+			function verificaFoco(){
+				if(document.hasFocus()){
+					contador++;
+					console.log(contador);
+					if(contador >= 10){
+						msgtimeout();
+						clearInterval(intervalo);
+					}
+				}
+			}
+			function msgtimeout(){
+				document.getElementById('msg').innerHTML ='obrigado'
+			}
+		</script>
+		</script>
+	</body>
+</html>
